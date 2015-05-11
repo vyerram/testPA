@@ -1,0 +1,55 @@
+﻿<section class="mainbar"  data-ng-controller="admin">
+    <section class="matter" >
+            <div class="row">
+                   
+			<div class="col-md-6" style="padding-left: 15px; padding-right: 0px"  >
+                <div class="well" style="background-color:#D96459;">
+                <h5 style="font-family: 'Open Sans', sans-serif; font-weight: bold; color:white">Multi-Day</h5>
+                       <div class="input-prepend input-group" style="margin-top:5px; margin-bottom:20px">
+                         <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                         <input type="text" value="03/18/2015 - 03/23/2015" class="form-control" id="date-range-picker"> 
+                       </div>
+                    <!--Angular Grid Starts-------->
+
+                    <div class="row" style="padding-left: 15px; padding-right: 0px" >
+                        <h5 style="font-family: 'Open Sans', sans-serif; font-weight: bold;  color:white"> Select Profiles </h5>
+                         <button type="button" class="btn btn-success" ng-disabled="!gridApi.grid.options.multiSelect" ng-click="selectAll()">Select All</button>
+                         <button type="button" class="btn btn-success" ng-click="clearAll()">Clear Selection</button>
+                        <button type="button" class="btn btn-success" ng-click="clearAll()">Add Selection</button>
+                     <br/>
+                        <div ui-grid="gridOptions" ui-grid-selection class="grid"></div>
+
+                    </div>
+
+                    </div>
+              </div>
+
+                <!---second column------>
+                <div class="col-md-6" style="padding-left: 15px; padding-right: 0px"  >
+                <div class="well" style="background-color:#D96459;">
+                <h5 style="font-family: 'Open Sans', sans-serif; font-weight: bold; color:white">Multi-Day</h5>
+                       <div class="input-prepend input-group" style="margin-top:5px; margin-bottom:20px">
+                         <span class="add-on input-group-addon"><i class="fa fa-calendar"></i></span>
+                         <input type="text" value="03/18/2015 - 03/23/2015" class="form-control" id="Text1"> 
+                       </div>
+                    <!--Angular Grid Starts-------->
+
+                    <div class="row" style="padding-left: 15px; padding-right: 0px" >
+                        <h5 style="font-family: 'Open Sans', sans-serif; font-weight: bold;  color:white"> Select Profiles </h5>
+                         <button type="button" class="btn btn-info" ng-disabled="!gridApi.grid.options.multiSelect" ng-click="selectAll()">Select All</button>
+                         <button type="button" class="btn btn-info" ng-click="clearAll()">Clear Selection</button>
+                         <button type="button" class="btn btn-info" ng-click="clearAll()">Remove Selected</button>
+                     <br/>
+                        <div ui-grid="gridOptions1" ui-grid-selection class="grid"></div>
+
+                    </div>
+
+                    </div>
+              </div>
+
+                <!-----Second Column End---->
+			 </div>
+
+
+    </section>
+</section>
